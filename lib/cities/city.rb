@@ -5,9 +5,17 @@ module Cities
     def initialize(data)
       @data = data
     end
+    
+    def city
+      @data['city']
+    end
 
     def name
       @data['accentcity']
+    end
+    
+    def country
+      @data['country']
     end
 
     def latitude
