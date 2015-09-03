@@ -2,18 +2,26 @@
 
 [![Build Status](https://travis-ci.org/joecorcoran/cities.png?branch=master)](https://travis-ci.org/joecorcoran/cities) [![Code Climate](https://codeclimate.com/github/joecorcoran/cities.png)](https://codeclimate.com/github/joecorcoran/cities)
 
-All the cities of the world (according to the periodically updated MaxMind database).
+Every city in the world (according to the MaxMind database)
 
-## Default Data
+## Setup
 
-To use this gem, you'll need the JSON data.
+```
+gem install 'cities'
+```
 
-Download it, extract it and connect it up as follows.
+## City Data
+
+Download the latest cities data and extract it into your app
 
 ```
 $ wget https://s3-us-west-2.amazonaws.com/cities-gem/cities.tar.gz
 $ tar -xzf cities.tar.gz
 ```
+
+## Cities.rb Initializer
+
+Create an initializer to point to the data
 
 ```ruby
 Cities.data_path = '/path/to/cities'
