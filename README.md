@@ -63,7 +63,7 @@ Cities.cities_in_country('GB')['buchlyvie'].population
 
 ## Optional: Rails Countries Gem
 
-[Countries gem](https://github.com/hexorx/countries)
+[Countries gem github page](https://github.com/hexorx/countries)
 
 ```
 gem install 'countries'
