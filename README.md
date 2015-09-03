@@ -61,9 +61,15 @@ Cities.cities_in_country('GB')['buchlyvie'].population
   #=> 448
 ```
 
-## Countries
+## Optional: Rails Countries Gem
 
-This gem was designed as an extension to the [Countries gem](https://github.com/hexorx/countries). Installing Cities adds two new instance methods to the `Country` class.
+[Countries gem](https://github.com/hexorx/countries)
+
+```
+gem install 'countries'
+```
+
+Cities gem also adds two new instance methods to the `Country` class from the rails 'countries' gem.
 
 ```ruby
 us = Country.search('US')
