@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joecorcoran/cities.png?branch=master)](https://travis-ci.org/joecorcoran/cities) [![Code Climate](https://codeclimate.com/github/joecorcoran/cities.png)](https://codeclimate.com/github/joecorcoran/cities)
 
-Every city in the world (according to the MaxMind database)
+Every city in the world (according to the MaxMind database).
 
 ## Setup
 
@@ -12,7 +12,7 @@ gem install 'cities'
 
 ## City Data
 
-Download the latest cities data and extract it into your app
+Download the latest cities data and extract it into your app.
 
 ```
 $ wget https://s3-us-west-2.amazonaws.com/cities-gem/cities.tar.gz
@@ -21,7 +21,7 @@ $ tar -xzf cities.tar.gz
 
 ## Cities.rb Initializer
 
-Create an initializer to point to the data
+Create an initializer to point to the data.
 
 ```ruby
 Cities.data_path = '/path/to/cities'
@@ -41,16 +41,16 @@ Countries are identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/w
 cities = Cities.cities_in_country('GB')
   #=> { "abberley"=> #<City:0x000001049b9ba0>, "abberton"=> #<City:0x000001049b9b50>, ... }
 
-mcr = cities['manchester']
+manchester = cities['manchester']
   #=> #<City:0x00000102fb4ea8>
 
-mcr.name
+manchester.name
   #=> "Manchester"
 
-mcr.population
+manchester.population
   #=> 395516
 
-mcr.latlong
+manchester.latlong
   #=> [53,5, -2.216667]
 ```
 
@@ -87,7 +87,7 @@ us.cities
 Sometimes you may want to not constantly want to read and parse the same large JSON data files.  So by default we cache in memory the parsed JSON.  To turn this off simply set the cache_data flag to false in your initializer file.
 
 ```ruby
-City.cache_data = false
+Cities.cache_data = false
 ```
 
 ## Specs
