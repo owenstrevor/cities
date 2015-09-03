@@ -4,7 +4,7 @@
 
 All the cities of the world (according to the periodically updated MaxMind database).
 
-## Data
+## Default Data
 
 To use this gem, you'll need the JSON data.
 
@@ -18,6 +18,12 @@ $ tar -xzf cities.tar.gz
 ```ruby
 Cities.data_path = '/path/to/cities'
 ```
+
+## Custom Data
+
+*Added by Owens
+
+I needed reverse lookup for a set of specific cities, so I created a new JSON file called TOP.json (as in "top cities") and added it to the Cities data path. This JSON file is a list of top cities with a country field. I also added the .country method to cities.rb to handle this.
 
 ## Usage
 
