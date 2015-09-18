@@ -7,7 +7,7 @@ Every city in the world (according to the MaxMind database).
 ## Setup
 
 ```
-gem install 'cities'
+gem install 'cities', :git => 'https://github.com/owenstrevor/cities.git'
 ```
 
 ## City Data
