@@ -6,22 +6,20 @@ Every city in the world (according to the MaxMind database).
 
 ## Setup
 
+1. Install the gem
+
 ```
 gem install 'cities', :git => 'https://github.com/owenstrevor/cities.git'
 ```
 
-## City Data
-
-Download the latest cities data and extract it into your app.
+2. Download the latest cities data and extract it into your app.
 
 ```
 $ wget https://s3-us-west-2.amazonaws.com/cities-gem/cities.tar.gz
 $ tar -xzf cities.tar.gz
 ```
 
-## Cities.rb Initializer
-
-Create an initializer to point to the data.
+3. Create file cities.rb and add it to config/initializers folder. Add the below line.
 
 ```ruby
 Cities.data_path = '/path/to/cities'
